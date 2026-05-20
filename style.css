@@ -137,6 +137,8 @@ a {
     height: 1.25rem;
 }
 
+
+
 .nav-menu {
     display: flex;
     gap: 2.5rem;
@@ -1328,6 +1330,8 @@ footer {
 /* ==========================================================================
    8. RESPONSIVE BREAKPOINTS
    ========================================================================== */
+
+/* --- Tablet / Large Mobile Breakpoint (max-width: 992px) --- */
 @media (max-width: 992px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -1344,19 +1348,36 @@ footer {
     }
     
     .hero-graphic-container {
-        height: 350px;
+        height: 380px;
+        margin-top: 1rem;
     }
     
     .customizer-grid {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .preview-panel {
+        max-width: 700px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
+/* --- Mobile Breakpoint (max-width: 768px) --- */
 @media (max-width: 768px) {
     html {
         font-size: 15px;
     }
-    
+
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .navbar-container {
+        padding: 0 1.5rem;
+    }
+
     .navbar-cta {
         display: none; /* Hide on mobile navbar to save space */
     }
@@ -1364,24 +1385,205 @@ footer {
     .nav-menu {
         display: none; /* Can add simplified mobile menu if needed */
     }
-    
-    .hero-title {
-        font-size: 2.4rem;
+
+    /* Hero Section Responsive Layout */
+    .hero-section {
+        padding: 7.5rem 0 4rem 0;
+        min-height: auto;
     }
-    
+
+    .hero-title {
+        font-size: 2.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .hero-graphic-container {
+        height: 320px;
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .main-window {
+        width: 280px;
+        height: 210px;
+        top: 10%;
+        left: 5%;
+    }
+
+    .code-window {
+        width: 200px;
+        height: 150px;
+        bottom: 10%;
+        right: 2%;
+    }
+
+    /* Pricing & Services */
+    .pricing-section {
+        padding: 5rem 0;
+    }
+
     .pricing-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+        max-width: 500px;
     }
-    
+
+    /* Customizer Section */
+    .customizer-section {
+        padding: 5rem 0 3rem 0;
+    }
+
+    /* Footer */
     .footer-container {
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
     }
-    
+
     .sticky-whatsapp {
         bottom: 1.5rem;
         right: 1.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+/* --- Small Mobile Breakpoint (max-width: 576px) --- */
+@media (max-width: 576px) {
+    /* Padding adjustments across pages */
+    .hero-container,
+    .pricing-grid,
+    .customizer-container {
+        padding: 0 1.25rem;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    /* Stack buttons on mobile to avoid overflow */
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        padding: 0.9rem;
+    }
+
+    /* Scaling the complex isometric illustration down beautifully */
+    .hero-graphic-container {
+        height: 240px;
+        transform: scale(0.85);
+        transform-origin: center center;
+        margin: -1rem auto -2rem auto;
+    }
+
+    /* Pricing Cards */
+    .pricing-card {
+        padding: 2.2rem 1.5rem;
+    }
+
+    .card-price {
+        margin-bottom: 1.5rem;
+    }
+
+    .price-value {
+        font-size: 2.6rem;
+    }
+
+    .card-features {
+        gap: 0.85rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Customizer Form adjustments */
+    .form-panel {
+        padding: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .palette-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .palette-tile {
+        padding: 0.75rem;
+    }
+
+    .font-chips {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .font-chip {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .logo-dropzone {
+        padding: 1.5rem 1rem;
+    }
+
+    .dropzone-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .dropzone-title {
+        font-size: 0.85rem;
+    }
+
+    /* Live Preview Console adjustment */
+    .console-body {
+        padding: 1.2rem;
+        font-size: 0.75rem;
+    }
+
+    .console-prompt-container {
+        padding: 0.75rem;
+    }
+
+    .console-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    .disclaimer-banner {
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .disclaimer-content {
+        align-items: flex-start;
+    }
+}
+
+/* --- Ultra-Narrow Mobile Breakpoint (max-width: 380px) --- */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 1.85rem;
+    }
+
+    .hero-graphic-container {
+        height: 200px;
+        transform: scale(0.72);
+        margin: -2rem auto -3.5rem auto;
+    }
+
+    .palette-grid,
+    .font-chips {
+        grid-template-columns: 1fr;
     }
 }
