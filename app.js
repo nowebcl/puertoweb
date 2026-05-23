@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // App Global State Machine
 const appState = {
-    service: "Web + Dominio ($45,000)", // Default active plan in UI
+    service: "Página Web Instantánea ($25,000)", // Default active plan in UI
     colorPalette: "Tech Corporate",
     fontStyle: "Modern Sans-serif",
     logoUploaded: false,
@@ -26,28 +26,11 @@ function selectPlan(planName) {
     
     pricingCards.forEach((card, idx) => {
         const btn = selectButtons[idx];
-        const btnPlan = btn.getAttribute("data-plan");
-        
-        if (btnPlan === planName) {
+        if (btn) {
             card.classList.add("active-card");
             btn.className = "btn btn-mint btn-block select-plan-btn";
-        } else {
-            card.classList.remove("active-card");
-            btn.className = "btn btn-outline btn-block select-plan-btn";
         }
     });
-
-    // Sync interactive customizer badges visual styling
-    const badgePlan1 = document.getElementById("badge-plan-1");
-    const badgePlan2 = document.getElementById("badge-plan-2");
-    
-    if (planName.includes("25,000")) {
-        badgePlan1.classList.add("active");
-        badgePlan2.classList.remove("active");
-    } else {
-        badgePlan2.classList.add("active");
-        badgePlan1.classList.remove("active");
-    }
 
     updateLivePrompt();
 }

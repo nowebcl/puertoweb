@@ -137,99 +137,58 @@
         <!-- Pricing / Services Section -->
         <section id="precios" class="pricing-section">
             <div class="section-header">
-                <div class="sub-heading">SERVICIOS DE PAGO ÚNICO</div>
-                <h2 class="section-title">Planes Directos, Sin Sorpresas</h2>
-                <p class="section-description">Diseñamos y desplegamos tu sitio con tecnología punta. Elige el plan que mejor se adapte a tus necesidades.</p>
+                <div class="sub-heading">SERVICIO PRESTIGIO ONE-SHOT</div>
+                <h2 class="section-title">Tu Página Web de Impacto por un Solo Pago</h2>
+                <p class="section-description">Sin cobros mensuales, sin contratos ocultos. Diseñamos y desplegamos tu sitio profesional con tecnología IA de última generación por una tarifa plana definitiva.</p>
             </div>
 
-            <div class="pricing-grid">
-                <!-- Plan 1 -->
-                <div class="pricing-card glass-card">
+            <div class="pricing-single-container">
+                <!-- Plan Único Todo Incluido -->
+                <div class="pricing-card glass-card active-card">
                     <div class="card-glow"></div>
-                    <div class="card-badge">ONE SHOT</div>
-                    <h3 class="card-title">PÁGINA WEB INSTANTÁNEA</h3>
+                    <div class="card-badge badge-accent">⚡ OFERTA DE LANZAMIENTO - TODO INCLUIDO</div>
+                    <h3 class="card-title">DISEÑO WEB INSTANTÁNEO</h3>
                     <div class="card-price">
                         <span class="price-currency">$</span>
                         <span class="price-value">25,000</span>
-                        <span class="price-period">/ único pago</span>
+                        <span class="price-period">/ único pago total</span>
                     </div>
                     
                     <ul class="card-features">
                         <li>
                             <i data-lucide="check" class="feat-yes"></i>
-                            <span>Entrega súper rápida en <strong>10 minutos</strong></span>
+                            <span>Ideal para <strong>Landing Pages, Páginas de Destino y Catálogos Digitales</strong></span>
                         </li>
                         <li>
                             <i data-lucide="check" class="feat-yes"></i>
-                            <span>Ideal para <strong>Landing Pages, Destino o Catálogos</strong></span>
+                            <span>Entrega récord ultra rápida lista en <strong>10 minutos</strong></span>
                         </li>
                         <li>
                             <i data-lucide="check" class="feat-yes"></i>
-                            <span>Diseño responsivo móvil y desktop</span>
+                            <span>Diseño responsivo premium (Celulares, Tablets y Computadoras)</span>
                         </li>
                         <li>
                             <i data-lucide="check" class="feat-yes"></i>
-                            <span>Hospedaje base y SEO para buscadores</span>
+                            <span><strong>Hospedaje Web en la nube (CDN) de por vida incluido</strong></span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="feat-yes"></i>
+                            <span>Estructura ultra veloz de última generación para Google SEO</span>
                         </li>
                         <li class="excluded">
                             <i data-lucide="x" class="feat-no"></i>
-                            <span>Tiendas online completas (e-commerce)</span>
+                            <span>Tiendas online completas (sin carritos ni pasarelas de pago)</span>
                         </li>
                         <li class="excluded">
                             <i data-lucide="x" class="feat-no"></i>
-                            <span>Modificaciones posteriores o correos</span>
+                            <span>Modificaciones posteriores o casillas de correo corporativo</span>
                         </li>
                     </ul>
 
                     <div class="card-action">
-                        <button onclick="selectPlan('Página Web Instantánea ($25,000)')" class="btn btn-outline btn-block select-plan-btn" data-plan="Página Web Instantánea ($25,000)">
-                            Seleccionar Plan
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Plan 2 -->
-                <div class="pricing-card glass-card active-card">
-                    <div class="card-glow"></div>
-                    <div class="card-badge badge-accent">ONE SHOT - ULTIMA GENERACIÓN</div>
-                    <h3 class="card-title">WEB + DOMINIO</h3>
-                    <div class="card-price">
-                        <span class="price-currency">$</span>
-                        <span class="price-value">45,000</span>
-                        <span class="price-period">/ único pago</span>
-                    </div>
-                    
-                    <ul class="card-features">
-                        <li>
-                            <i data-lucide="check" class="feat-yes"></i>
-                            <span>Entrega súper rápida en <strong>10 minutos</strong></span>
-                        </li>
-                        <li>
-                            <i data-lucide="check" class="feat-yes"></i>
-                            <span>Ideal para <strong>Landing Pages, Destino o Catálogos</strong></span>
-                        </li>
-                        <li>
-                            <i data-lucide="check" class="feat-yes"></i>
-                            <span><strong>Dominio propio incluido</strong> (.cl o .com)</span>
-                        </li>
-                        <li>
-                            <i data-lucide="check" class="feat-yes"></i>
-                            <span>Diseño responsivo premium con SEO avanzado</span>
-                        </li>
-                        <li class="excluded">
-                            <i data-lucide="x" class="feat-no"></i>
-                            <span>Tiendas online completas (e-commerce)</span>
-                        </li>
-                        <li class="excluded">
-                            <i data-lucide="x" class="feat-no"></i>
-                            <span>Modificaciones posteriores o correos</span>
-                        </li>
-                    </ul>
-
-                    <div class="card-action">
-                        <button onclick="selectPlan('Web + Dominio ($45,000)')" class="btn btn-mint btn-block select-plan-btn" data-plan="Web + Dominio ($45,000)">
-                            Seleccionar Plan
-                        </button>
+                        <a href="#personalizar" onclick="selectPlan('Página Web Instantánea ($25,000)')" class="btn btn-mint btn-block select-plan-btn pulsating" data-plan="Página Web Instantánea ($25,000)">
+                            <i data-lucide="zap"></i> ¡Quiero Mi Página Ahora!
+                        </a>
                     </div>
                 </div>
             </div>
@@ -258,14 +217,10 @@
                         <div class="form-group">
                             <label class="form-label"><span class="step-num">1</span> Plan de Servicio Seleccionado</label>
                             <div class="service-badges">
-                                <button type="button" class="service-badge" id="badge-plan-1" onclick="updatePlanState('Página Web Instantánea ($25,000)')">
-                                    <i data-lucide="zap"></i>
-                                    <span>Página Web Instantánea ($25,000)</span>
-                                </button>
-                                <button type="button" class="service-badge active" id="badge-plan-2" onclick="updatePlanState('Web + Dominio ($45,000)')">
-                                    <i data-lucide="globe"></i>
-                                    <span>Web + Dominio ($45,000)</span>
-                                </button>
+                                <div class="service-badge active-plan-static">
+                                    <i data-lucide="zap" class="accent-text"></i>
+                                    <span>Página Web Instantánea ($25,000) - Pago Único</span>
+                                </div>
                             </div>
                         </div>
 

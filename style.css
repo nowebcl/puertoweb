@@ -649,6 +649,20 @@ a {
     gap: 3rem;
 }
 
+.pricing-single-container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.active-plan-static {
+    background: rgba(32, 201, 151, 0.08) !important;
+    border: 1px solid var(--accent-mint) !important;
+    color: var(--text-primary) !important;
+    box-shadow: 0 0 15px rgba(32, 201, 151, 0.1);
+    cursor: default !important;
+}
+
 /* Glassmorphism Pricing Cards */
 .glass-card {
     background: var(--bg-card);
@@ -1457,6 +1471,7 @@ footer {
     /* Padding adjustments across pages */
     .hero-container,
     .pricing-grid,
+    .pricing-single-container,
     .customizer-container {
         padding: 0 1.25rem;
     }
